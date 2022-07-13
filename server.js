@@ -34,10 +34,6 @@ mongoose.connect(
   }
 );
 
-app.use('/', (req, res, next) => {
-  res.json({ msg: 'Hello Everyone!' });
-});
-
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static('client/build'));
   app.get('*', (req, res) => {

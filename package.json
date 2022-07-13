@@ -2,6 +2,9 @@
   "name": "mern-full-auth",
   "version": "1.0.0",
   "description": "",
+  "engines": {
+    "yarn": "1.x"
+  },
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
